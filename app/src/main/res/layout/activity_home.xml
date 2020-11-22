@@ -7,5 +7,54 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".HomeActivity">
-
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow android:orientation="vertical">
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/PayrollBtn"
+                android:background="@drawable/stubs"></ImageButton>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/BanksBtn"
+                android:background="@drawable/banks"
+                ></ImageButton>
+        </TableRow>
+        <TableRow android:orientation="vertical"
+            android:layout_marginTop="50dp">
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/MessagesBtn"
+                android:background="@drawable/messages"
+                ></ImageButton>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/DocumentBtn"
+                android:background="@drawable/documents"
+                ></ImageButton>
+        </TableRow>
+        <TableRow android:orientation="vertical"
+            android:layout_marginTop="50dp">
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/InfoBtn"
+                android:background="@drawable/information"
+                ></ImageButton>
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/EmergBtn"
+                android:background="@drawable/emerg"
+                ></ImageButton>
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
