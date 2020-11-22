@@ -5,6 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Banks">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <View android:id="@+id/separator"
+                android:background="#ffffff"
+                android:layout_width = "fill_parent"
+                android:layout_height="1dip"
+                android:layout_centerVertical ="true"
+                android:layout_alignParentTop="true"/>
+        </TableRow>
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="SICK HRS"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="30dp"
+                android:id="@+id/sickHrs"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="VACATION ACC./$"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:textSize="30dp"
+                android:id="@+id/vacationPay"
+                android:textStyle="bold"
+                >
+
+            </TextView>
+        </TableRow>
+    </TableLayout>
 
 </LinearLayout>
