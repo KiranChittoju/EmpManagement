@@ -8,7 +8,22 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:id="@+id/submit"
+        android:text="Login">
 
+    </Button>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:id="@+id/retrive"
+        android:text="Reset"
+        android:layout_marginTop="20dp">
+
+    </Button>
 
 
 </LinearLayout>

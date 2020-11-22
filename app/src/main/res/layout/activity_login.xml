@@ -8,6 +8,41 @@
     android:gravity="center"
     tools:context=".LoginActivity">
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:id="@+id/dataView"
+        ></TextView>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserName"
+        android:hint="USER NAME"
+        android:gravity="center"></EditText>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BusinessCode"
+        android:hint="BUSINESS CODE"
+        android:gravity="center"
+        android:layout_marginTop="20dp"></EditText>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:hint="PASSWORD"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        ></EditText>
+<Button
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/Login"
+    android:gravity="center"
+    android:text="LOGIN"
+    android:layout_marginTop="20dp"></Button>
 
 </LinearLayout>
