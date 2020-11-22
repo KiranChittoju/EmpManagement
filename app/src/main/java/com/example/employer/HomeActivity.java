@@ -43,7 +43,14 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 intent=new Intent(this.getApplicationContext(),PaystubsActivity.class);
                 this.startActivity(intent);
                 break;
-
+            case R.id.DocumentBtn:
+                intent=new Intent(this.getApplicationContext(),PaystubsActivity.class);
+                this.startActivity(intent);
+                break;
+            case R.id.EmergBtn:
+                intent=new Intent(this.getApplicationContext(),PaystubsActivity.class);
+                this.startActivity(intent);
+                break;
         }
     }
 }
