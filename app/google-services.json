@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "446359354882",
+    "firebase_url": "https://employerdatabase-f6733.firebaseio.com",
+    "project_id": "employerdatabase-f6733",
+    "storage_bucket": "employerdatabase-f6733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446359354882:android:7c07936a8961add342311b",
+        "android_client_info": {
+          "package_name": "com.example.employer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446359354882-pcr8efugg5kkfp7mj0pt7o8mjpojv63o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.employer",
+            "certificate_hash": "ab5b142250c0067d1ae3f9f9784feaf4624d8c17"
+          }
+        },
+        {
+          "client_id": "446359354882-ti3eqq1dsccm23v4vovfjdhkgp8e1md6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfztQpb126m0XIUQjReeTm2jq0bC2lakg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446359354882-ti3eqq1dsccm23v4vovfjdhkgp8e1md6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
