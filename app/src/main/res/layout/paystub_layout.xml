@@ -4,4 +4,60 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     >
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+        <TableRow
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TableRow>
+                    <TextView
+                        android:id="@+id/pay_date"
+                        android:text="Payroll"
+                        android:textSize="30dp"
+                        android:paddingVertical="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        ></TextView> </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Net Payment"
+                        android:textSize="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        ></TextView>
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/Pay_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="$0.00"
+                        android:textColor="#4CAF50"
+                        android:textStyle="bold"
+                        android:textSize="40dp"></TextView>
+                </TableRow>
+
+            </TableLayout>
+            <ImageButton
+                android:id="@+id/pay_view"
+                android:layout_width="80dp"
+                android:layout_height="160dp"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow"
+                ></ImageButton>
+        </TableRow>
+    </TableLayout>
+
+
 </LinearLayout>
