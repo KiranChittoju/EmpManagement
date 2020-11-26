@@ -53,11 +53,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 checkData(Username,BusinessCode,password);
                 /*if(Invalid_text.getText().toString().equals("1"))
                     _submit.setOnClickListener(this);
-                *//*else
+                else
                     _submit.setOnClickListener(null);*/
             }
         });
-       //if(Invalid_text.getText().toString().equals("1"))
+       if(Invalid_text.getText().toString().equals("1"))
            _submit.setOnClickListener(this);
 
     }

@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class payStubAdpater extends BaseAdapter {
 
     ArrayList<Payroll> payroll;
-
     public payStubAdpater(ArrayList<Payroll> payroll) {
         this.payroll=payroll;
 
@@ -42,7 +41,6 @@ public class payStubAdpater extends BaseAdapter {
             convertView= LayoutInflater.from(parent.getContext()).inflate(R.layout.paystub_layout, null);
             viewHolder=new ViewHolder(convertView);
             convertView.setTag(viewHolder);
-
         }
         else
         {

@@ -19,7 +19,9 @@ public class EmployeesDetails {
         Phone = phone;
         Address = address;
     }
+    public EmployeesDetails(){
 
+    }
     public String getUserName() {
         return UserName;
     }
@@ -76,7 +78,5 @@ public class EmployeesDetails {
         Address = address;
     }
 
-    public EmployeesDetails(){
 
-    }
 }

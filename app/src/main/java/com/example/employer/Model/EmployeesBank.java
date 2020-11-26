@@ -11,6 +11,9 @@ public class EmployeesBank {
         Sickness_hrs = sickness_hrs;
         User_id = user_id;
     }
+    public EmployeesBank(){
+
+    }
 
     public String getVacation() {
         return Vacation;

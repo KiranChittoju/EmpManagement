@@ -11,14 +11,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data"
+        android:text=""
         android:textSize="30dp"
         android:id="@+id/dataView"
         ></TextView>
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Retieve"
+        android:text="Push Data"
         android:id="@+id/RetriveBtn"
         android:layout_marginTop="30dp"> </Button>
 

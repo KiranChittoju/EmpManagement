@@ -12,6 +12,10 @@ public class Payroll {
         this.user_id = user_id;
     }
 
+    public Payroll(){
+
+    }
+
     public String getPay_date() {
         return pay_date;
     }

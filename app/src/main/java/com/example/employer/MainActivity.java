@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button submitBtn;
-    Button RetriveBtn;
+        Button submitBtn;
+        Button RetriveBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         submitBtn.setOnClickListener(this);
         RetriveBtn.setOnClickListener(this);
 
-        RetriveBtn.setVisibility(View.INVISIBLE);
+       // RetriveBtn.setVisibility(View.INVISIBLE);
     }
 
     @Override
