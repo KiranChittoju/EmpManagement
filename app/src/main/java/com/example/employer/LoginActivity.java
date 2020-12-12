@@ -29,6 +29,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     EditText _Password;
     Button _submit;
     TextView Invalid_text;
+    int login_flag=0;
     FirebaseAuth fauth;
 
     FirebaseFirestore db;
@@ -44,21 +45,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         Invalid_text=findViewById(R.id.dataView);
 
         db=FirebaseFirestore.getInstance();
-        _submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String Username=_UserName.getText().toString();
-                String BusinessCode=_BusinessCode.getText().toString();
-                String password=_Password.getText().toString();
-                checkData(Username,BusinessCode,password);
-                /*if(Invalid_text.getText().toString().equals("1"))
-                    _submit.setOnClickListener(this);
-                else
-                    _submit.setOnClickListener(null);*/
-            }
-        });
-       if(Invalid_text.getText().toString().equals("1"))
-           _submit.setOnClickListener(this);
+        _submit.setOnClickListener(this);
 
     }
 
@@ -99,8 +86,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             for(DocumentSnapshot document:task.getResult()){
                                 EmployeesDetails emp=document.toObject(EmployeesDetails.class);
                                 if(UserName.equals(emp.getUserName()) && BusinessCode.equals(emp.getBusinessCode()) && Password.equals(emp.getPassword())){
-                                    Invalid_text.setVisibility(View.INVISIBLE);
-                                    result="1";
+                                    login_flag=1;
                                     break;
                                 }
                                 else{
@@ -124,7 +110,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        Intent intent=new Intent(this.getApplicationContext(), HomeActivity.class);
-        this.startActivity(intent);
+
+        String Username=_UserName.getText().toString();
+        String BusinessCode=_BusinessCode.getText().toString();
+        String password=_Password.getText().toString();
+        checkData(Username,BusinessCode,password);
+        if(login_flag==1)
+        {
+            Intent intent=new Intent(this.getApplicationContext(), HomeActivity.class);
+            this.startActivity(intent);
+        }
+        else
+            Toast.makeText(getApplicationContext(),"Invalid details. Try Again",Toast.LENGTH_LONG).show();
     }
 }
